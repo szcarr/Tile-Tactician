@@ -38,3 +38,4 @@ func _on_back_button_pressed() -> void:
 func _on_create_game_button_pressed() -> void:
 	GameSettings.game_map_size = current_map_size
 	GameSettings.game_bomb_density = current_bomb_density
+	get_tree().change_scene_to_file("res://scenes/game/GameWindow.tscn")
